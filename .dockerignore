@@ -1,0 +1,28 @@
+# VCS / editor
+.git
+.gitignore
+.vscode
+.idea
+*.swp
+.DS_Store
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Secrets and local config
+.env
+.env.*
+
+# Docker / docs (not needed inside the image)
+Dockerfile
+docker-compose*.yml
+.dockerignore
+README.md

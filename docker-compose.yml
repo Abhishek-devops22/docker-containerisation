@@ -1,0 +1,12 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sample-api:latest
+    container_name: sample-api
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: production
+    restart: unless-stopped
